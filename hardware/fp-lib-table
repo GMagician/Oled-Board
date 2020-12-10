@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name B3W-9000-RG2)(type KiCad)(uri ${KIPRJMOD}/modules/B3W-9000-RG2.pretty)(options "")(descr ""))
+  (lib (name OledSupport-header)(type KiCad)(uri ${KIPRJMOD}/modules/OledSupport-header.pretty)(options "")(descr ""))
+)
