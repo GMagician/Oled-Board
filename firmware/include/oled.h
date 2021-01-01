@@ -112,3 +112,7 @@ union Event {
   uint8_t rawData;
 };
 constexpr static Event NO_EVENT = { EC_NONE };
+
+#define ENCODER_EVENT(c)    {.wheel=WheelEvent({.antiClockWise=!c, .clockWise=c, .steps=uint8_t(wheelAccComponent >> 8), .category=EC_WHEEL})}
+#define BUTTON_EVENT(e,b)   {.buttons=ButtonEvent({.event=e, .button=b, .category=EC_BUTTON})}
+#define GPIO_EVENT(i)       {.gpios=GPIOEvent({.gpios=i,.category=EC_GPIO})}

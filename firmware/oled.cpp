@@ -153,9 +153,9 @@ void loadConfiguration() {
     // Most important thing is i2c address.
     // If invalid restore eeprom defaults to let user to communicate
     uint8_t * configPtr = (uint8_t *)&config;
-    uint8_t * defConfigPtr = (uint8_t *)&defaultConfig;
+    const uint8_t * defConfigPtr = (const uint8_t *)&defaultConfig;
     for (uint8_t eeAddr = 0; eeAddr < sizeof(config); ++eeAddr, ++configPtr, ++defConfigPtr) {
-      *configPtr = *defConfigPtr;
+      *configPtr = pgm_read_byte(defConfigPtr);
       eeWrite(eeAddr, *configPtr);
     }
   }
@@ -513,7 +513,7 @@ void loop() {
       if (!(debouncedButtonsStatus & btnMask) && (actualTime - pressTime[btnID]) >= config.buttonsDebounceTime) {
         debouncedButtonsStatus |= btnMask;
 
-        Event event = {.buttons=ButtonEvent({.event=PRESS, .button=btnID, .category=EC_BUTTON})};
+        Event event = BUTTON_EVENT(PRESS, btnID);
         pushEvent(event);
 
         if ((keyBeepMask >> 1) & btnMask) // keyBeepMask bit 0 is wheel movement so >> 1 to get only buttons
@@ -522,14 +522,15 @@ void loop() {
       // Held detection
       if (!(buttonsHeldStatus & btnMask) && (actualTime - pressTime[btnID]) >= (config.buttonsHoldTime * 10)) {
         buttonsHeldStatus |= btnMask;
-        Event event = {.buttons=ButtonEvent({.event=HELD, .button=btnID, .category=EC_BUTTON})};
+
+        Event event = BUTTON_EVENT(HELD, btnID);
         pushEvent(event);
       }
     }
     else /*if (!(buttonsStatus & btnMask))*/ {
       // Button has been release, check if event is required
       if (debouncedButtonsStatus & buttonsReleaseMask & btnMask) {
-        Event event = {.buttons=ButtonEvent({.event=RELEASE, .button=btnID, .category=EC_BUTTON})};
+        Event event = BUTTON_EVENT(RELEASE, btnID);
         pushEvent(event);
       }
       debouncedButtonsStatus &= ~btnMask;
@@ -552,7 +553,7 @@ void loop() {
   else if (triggerArmed) {
     if (encBChanged) {
       bool cw = encB ^ config.option.reverseEncoder;
-      Event event = {.wheel=WheelEvent({.antiClockWise=!cw, .clockWise=cw, .steps=uint8_t(wheelAccComponent>>8), .category=EC_WHEEL})};
+      Event event = ENCODER_EVENT(cw);
       pushEvent(event);
 
       if (keyBeepMask & 0b00001)
@@ -569,7 +570,7 @@ void loop() {
 
   uint8_t gpioStatus = readGPIOs();
   if ((gpioStatus ^ prevGPIOStatus) & gpioEventMask) {
-    Event event = {.gpios=GPIOEvent({.gpios=gpioStatus,.category=EC_GPIO})};
+    Event event = GPIO_EVENT(gpioStatus);
     pushEvent(event);
   }
   prevGPIOStatus = gpioStatus;
