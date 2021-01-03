@@ -401,11 +401,8 @@ uint8_t i2cRegisterHandler(bool isWrite, uint8_t value = 0) {
     default:
       uint8_t eepromAddr = (i2cRegister - I2C_EEPROM);
       if (i2cRegister >= I2C_EEPROM && eepromAddr < sizeof(config)) {
-        if (isWrite) {
+        if (isWrite)
           eeWrite(eepromAddr, value);
-          if (eepromAddr == (&config.buttonsRemapMask - (uint8_t *)&config))
-            gpioSetup();
-        }
         return eeRead(eepromAddr);
       }
       return 0xFF;
@@ -548,8 +545,8 @@ void loop() {
   bool encB = READ(ENCB_PIN);
   bool encBChanged = encB ^ prevEncB;
   wheelHasMoved |= (encA ^ prevEncA || encBChanged);
-  if (!prevEncA)
-    triggerArmed = encA;
+  if (prevEncA)
+    triggerArmed = prevEncA;
   else if (triggerArmed) {
     if (encBChanged) {
       bool cw = encB ^ config.option.reverseEncoder;
