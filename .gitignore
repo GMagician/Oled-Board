@@ -22,4 +22,3 @@
 .vscode/*
 /hardware/*.sch-bak
 /hardware/*.kicad_pcb-bak
-/hardware/gerber/*
