@@ -549,7 +549,7 @@ void loop() {
     triggerArmed = prevEncA;
   else if (triggerArmed) {
     if (encBChanged) {
-      bool cw = encB ^ config.option.reverseEncoder;
+      bool cw = prevEncB ^ config.option.reverseEncoder;
       Event event = ENCODER_EVENT(cw);
       pushEvent(event);
 
