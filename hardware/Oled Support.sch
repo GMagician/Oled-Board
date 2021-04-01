@@ -163,7 +163,7 @@ AR Path="/5FB2E117" Ref="J?"  Part="1"
 AR Path="/5FB24BCD/5FB2E117" Ref="J?"  Part="1" 
 AR Path="/5FB26E9D/5FB2E117" Ref="J203"  Part="1" 
 F 0 "J203" H 5600 6850 50  0000 L CNN
-F 1 "SSD1306" H 5500 3650 50  0000 L CNN
+F 1 "SH1106" H 5500 3650 50  0000 L CNN
 F 2 "Display:OLED-128O064D" H 5800 5150 50  0001 C CNN
 F 3 "http://www.gabotronics.com/download/datasheets/ssd1306.pdf" H 5700 4150 50  0001 C CNN
 	1    5700 4150
