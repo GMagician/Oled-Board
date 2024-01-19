@@ -954,7 +954,7 @@
   (symbol (lib_id "Panel:SSD1306") (at 144.78 105.41 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e117)
-    (property "Reference" "J?" (at 142.24 36.83 0)
+    (property "Reference" "J203" (at 142.24 36.83 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "SH1106" (at 139.7 118.11 0)
@@ -998,9 +998,6 @@
     (pin "9" (uuid eebe58a5-e788-4916-beb3-3db7ff8ce967))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "J?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "J203") (unit 1)
         )
@@ -1011,7 +1008,7 @@
   (symbol (lib_id "power:GND") (at 118.11 38.1 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e11d)
-    (property "Reference" "#PWR?" (at 118.11 31.75 0)
+    (property "Reference" "#PWR0204" (at 118.11 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 118.11 34.29 0)
@@ -1026,9 +1023,6 @@
     (pin "1" (uuid 6d92fbae-d4a6-4230-a515-fc1b33f9c664))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "#PWR0204") (unit 1)
         )
@@ -1039,7 +1033,7 @@
   (symbol (lib_id "power:+3V3") (at 111.76 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e130)
-    (property "Reference" "#PWR?" (at 111.76 41.91 0)
+    (property "Reference" "#PWR0203" (at 111.76 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 111.76 34.29 0)
@@ -1054,9 +1048,6 @@
     (pin "1" (uuid 21e40111-da0c-418a-b898-9fc712fed47b))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "#PWR0203") (unit 1)
         )
@@ -1067,7 +1058,7 @@
   (symbol (lib_id "power:GND") (at 83.82 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e155)
-    (property "Reference" "#PWR?" (at 83.82 119.38 0)
+    (property "Reference" "#PWR0208" (at 83.82 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 83.82 116.84 0)
@@ -1082,9 +1073,6 @@
     (pin "1" (uuid 3c0f43ed-5192-478d-a45f-60613dab9b0e))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "#PWR0208") (unit 1)
         )
@@ -1095,7 +1083,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 115.57 114.3 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e165)
-    (property "Reference" "#FLG?" (at 115.57 116.205 0)
+    (property "Reference" "#FLG0202" (at 115.57 116.205 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 115.57 118.6942 0)
@@ -1110,9 +1098,6 @@
     (pin "1" (uuid fa414453-1e85-4fca-a8bf-376b38e4e5fb))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "#FLG?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "#FLG0202") (unit 1)
         )
@@ -1123,7 +1108,7 @@
   (symbol (lib_id "power:PWR_FLAG") (at 101.6 114.3 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e16f)
-    (property "Reference" "#FLG?" (at 101.6 116.205 0)
+    (property "Reference" "#FLG0201" (at 101.6 116.205 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "PWR_FLAG" (at 101.6 118.6942 0)
@@ -1138,9 +1123,6 @@
     (pin "1" (uuid edc9d4fb-4739-4836-af65-84313433295f))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "#FLG?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "#FLG0201") (unit 1)
         )
@@ -1151,7 +1133,7 @@
   (symbol (lib_id "power:GND") (at 93.98 62.23 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e196)
-    (property "Reference" "#PWR?" (at 93.98 68.58 0)
+    (property "Reference" "#PWR0205" (at 93.98 68.58 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 93.98 66.04 0)
@@ -1166,9 +1148,6 @@
     (pin "1" (uuid 63dfc4cb-0b5d-435a-a269-e62441fb456a))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "#PWR0205") (unit 1)
         )
@@ -1179,7 +1158,7 @@
   (symbol (lib_id "Device:C_Small") (at 104.14 43.18 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e1b3)
-    (property "Reference" "C?" (at 100.33 41.91 90)
+    (property "Reference" "C201" (at 100.33 41.91 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1µF" (at 107.95 41.91 90)
@@ -1198,9 +1177,6 @@
     (pin "2" (uuid bc4d5f53-6876-470e-9392-98ba882baa59))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "C?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "C201") (unit 1)
         )
@@ -1211,7 +1187,7 @@
   (symbol (lib_id "Device:C_Small") (at 104.14 48.26 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e1b9)
-    (property "Reference" "C?" (at 100.33 46.99 90)
+    (property "Reference" "C202" (at 100.33 46.99 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1µF" (at 107.95 46.99 90)
@@ -1230,9 +1206,6 @@
     (pin "2" (uuid bd8353a2-03a9-4634-b67a-d50739cb906f))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "C?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "C202") (unit 1)
         )
@@ -1243,7 +1216,7 @@
   (symbol (lib_id "Device:C_Small") (at 104.14 53.34 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e1bf)
-    (property "Reference" "C?" (at 100.33 52.07 90)
+    (property "Reference" "C203" (at 100.33 52.07 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1µF" (at 107.95 52.07 90)
@@ -1262,9 +1235,6 @@
     (pin "2" (uuid 1d003f36-aeb1-4e21-a2db-a4d7ba204075))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "C?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "C203") (unit 1)
         )
@@ -1275,7 +1245,7 @@
   (symbol (lib_id "Device:C_Small") (at 104.14 60.96 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e1c5)
-    (property "Reference" "C?" (at 100.33 59.69 90)
+    (property "Reference" "C204" (at 100.33 59.69 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1µF" (at 107.95 59.69 90)
@@ -1294,9 +1264,6 @@
     (pin "2" (uuid d96e628c-305c-4a5f-ba90-7df013fb94d6))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "C?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "C204") (unit 1)
         )
@@ -1307,7 +1274,7 @@
   (symbol (lib_id "Device:C_Small") (at 109.22 109.22 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e1cb)
-    (property "Reference" "C?" (at 105.41 107.95 90)
+    (property "Reference" "C207" (at 105.41 107.95 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "10µF" (at 113.03 107.95 90)
@@ -1326,9 +1293,6 @@
     (pin "2" (uuid 98e1f8de-da30-4001-8bf3-91befb47034a))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "C?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "C207") (unit 1)
         )
@@ -1339,7 +1303,7 @@
   (symbol (lib_id "Device:C_Small") (at 97.79 106.68 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e1d1)
-    (property "Reference" "C?" (at 93.98 105.41 90)
+    (property "Reference" "C206" (at 93.98 105.41 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2.2µF/16V" (at 104.14 105.41 90)
@@ -1358,9 +1322,6 @@
     (pin "2" (uuid 73e766ef-1819-4f89-8619-1dd1850fc675))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "C?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "C206") (unit 1)
         )
@@ -1371,7 +1332,7 @@
   (symbol (lib_id "Device:R_Small") (at 88.9 104.14 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb2e1d7)
-    (property "Reference" "R?" (at 82.55 101.6 90)
+    (property "Reference" "R202" (at 82.55 101.6 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "910K" (at 90.17 101.6 90)
@@ -1390,9 +1351,6 @@
     (pin "2" (uuid 745bffcc-c6c0-4e2e-8a85-be570b182053))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "R?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "R202") (unit 1)
         )
@@ -1455,7 +1413,7 @@
   (symbol (lib_id "power:GND") (at 44.45 34.29 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fb34296)
-    (property "Reference" "#PWR?" (at 44.45 40.64 0)
+    (property "Reference" "#PWR0202" (at 44.45 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 44.45 38.1 0)
@@ -1470,9 +1428,6 @@
     (pin "1" (uuid 34af1a88-404f-45c4-baa5-dc55fb3cbaf2))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "#PWR0202") (unit 1)
         )
@@ -1525,12 +1480,19 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 07dd6e94-3d13-478a-ad5a-a9ad44a59fef))
+    (instances
+      (project "Panel"
+        (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
+          (reference "#PWR0201") (unit 1)
+        )
+      )
+    )
   )
 
   (symbol (lib_id "Device:R_Small") (at 74.93 73.66 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fc26da4)
-    (property "Reference" "R?" (at 71.12 71.12 90)
+    (property "Reference" "R201" (at 71.12 71.12 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "10K" (at 76.2 76.2 90)
@@ -1549,9 +1511,6 @@
     (pin "2" (uuid 0653527a-3cdd-46bc-9518-365411ebac47))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "R?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "R201") (unit 1)
         )
@@ -1562,7 +1521,7 @@
   (symbol (lib_id "Device:C_Small") (at 74.93 80.01 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fc271fc)
-    (property "Reference" "C?" (at 71.12 78.74 90)
+    (property "Reference" "C205" (at 71.12 78.74 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100nF" (at 78.74 81.28 90)
@@ -1581,9 +1540,6 @@
     (pin "2" (uuid 661ade86-4514-4b1e-91d0-e1981c7decb7))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "C?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "C205") (unit 1)
         )
@@ -1594,7 +1550,7 @@
   (symbol (lib_id "power:GND") (at 69.85 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fc2d251)
-    (property "Reference" "#PWR?" (at 69.85 87.63 0)
+    (property "Reference" "#PWR0207" (at 69.85 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 69.85 85.09 0)
@@ -1609,9 +1565,6 @@
     (pin "1" (uuid b9a6ea85-71ee-4f25-8bb1-320aece98060))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
           (reference "#PWR0207") (unit 1)
         )
@@ -1635,5 +1588,12 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e545e6c4-e72e-4ab1-87d5-97743cbe9a25))
+    (instances
+      (project "Panel"
+        (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
+          (reference "#PWR0206") (unit 1)
+        )
+      )
+    )
   )
 )

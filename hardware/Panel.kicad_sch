@@ -1795,15 +1795,15 @@
     (uuid fa7ea864-1177-40ca-909c-e668502b7481)
   )
 
-  (label "SCK" (at 24.13 34.29 0)
+  (label "SCK" (at 24.13 34.29 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 08e57417-370f-45dd-a364-4a2547f97b0a)
   )
-  (label "MISO" (at 24.13 36.83 0)
+  (label "MISO" (at 24.13 36.83 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 14919d95-2e06-4409-b67b-834c59bb6433)
   )
-  (label "MOSI" (at 24.13 31.75 0)
+  (label "MOSI" (at 24.13 31.75 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 9f6a87d5-d4cf-469f-a88c-18d42488ce46)
   )
@@ -2340,7 +2340,7 @@
     (property "Reference" "U102" (at 101.6 86.36 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "ATtiny4313" (at 120.65 139.7 0)
+    (property "Value" "ATTINY4313" (at 120.65 139.7 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" (at 113.03 113.03 0)
@@ -2567,7 +2567,7 @@
   (symbol (lib_id "Device:C_Small") (at 102.87 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fbf2af3)
-    (property "Reference" "C?" (at 105.41 34.29 0)
+    (property "Reference" "C103" (at 105.41 34.29 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 105.41 36.83 0)
@@ -2586,9 +2586,6 @@
     (pin "2" (uuid 75c9905e-7ee6-4bf4-a591-a252f0bd0590))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
-          (reference "C?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
           (reference "C103") (unit 1)
         )
@@ -2599,7 +2596,7 @@
   (symbol (lib_id "Device:C_Small") (at 80.01 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fbf2afa)
-    (property "Reference" "C?" (at 72.39 34.29 0)
+    (property "Reference" "C102" (at 72.39 34.29 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100nF" (at 72.39 36.83 0)
@@ -2618,9 +2615,6 @@
     (pin "2" (uuid e57fdf5f-aa9f-4aec-a722-815c93b4729c))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
-          (reference "C?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
           (reference "C102") (unit 1)
         )
@@ -2631,7 +2625,7 @@
   (symbol (lib_id "power:GND") (at 91.44 43.18 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fbf2b01)
-    (property "Reference" "#PWR?" (at 91.44 49.53 0)
+    (property "Reference" "#PWR0111" (at 91.44 49.53 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 91.44 46.99 0)
@@ -2646,9 +2640,6 @@
     (pin "1" (uuid 371babbe-a3c0-4c2a-8ced-7e01b3c20f7a))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
           (reference "#PWR0111") (unit 1)
         )
@@ -2659,7 +2650,7 @@
   (symbol (lib_id "power:+3V3") (at 109.22 29.21 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fbf2b07)
-    (property "Reference" "#PWR?" (at 109.22 33.02 0)
+    (property "Reference" "#PWR0106" (at 109.22 33.02 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 109.22 25.4 0)
@@ -2674,9 +2665,6 @@
     (pin "1" (uuid a2f14fab-3657-48ad-aa7a-968b159c8766))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
           (reference "#PWR0106") (unit 1)
         )
@@ -2687,7 +2675,7 @@
   (symbol (lib_id "Regulator_Linear:XC6206PxxxMR") (at 91.44 30.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fbf2b1a)
-    (property "Reference" "U?" (at 91.44 24.3332 0)
+    (property "Reference" "U101" (at 91.44 24.3332 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "XC6206P" (at 91.44 26.6446 0)
@@ -2707,9 +2695,6 @@
     (pin "3" (uuid d825815a-558b-4ee5-b555-561c9e220c6b))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
-          (reference "U?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
           (reference "U101") (unit 1)
         )
@@ -2720,7 +2705,7 @@
   (symbol (lib_id "power:VCC") (at 74.93 27.94 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fbf2b20)
-    (property "Reference" "#PWR?" (at 74.93 31.75 0)
+    (property "Reference" "#PWR0104" (at 74.93 31.75 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VCC" (at 74.93 24.13 0)
@@ -2735,9 +2720,6 @@
     (pin "1" (uuid 78eccdf6-db6e-4c8d-8e16-9d4b656a84bc))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
           (reference "#PWR0104") (unit 1)
         )
@@ -2748,7 +2730,7 @@
   (symbol (lib_id "power:+3V3") (at 113.03 81.28 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fc01563)
-    (property "Reference" "#PWR?" (at 113.03 85.09 0)
+    (property "Reference" "#PWR0115" (at 113.03 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 113.03 77.47 0)
@@ -2763,9 +2745,6 @@
     (pin "1" (uuid 5a622956-8b25-43af-b778-37dff88dff40))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
           (reference "#PWR0115") (unit 1)
         )
@@ -2776,7 +2755,7 @@
   (symbol (lib_id "power:+3V3") (at 129.54 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fc01902)
-    (property "Reference" "#PWR?" (at 129.54 67.31 0)
+    (property "Reference" "#PWR0112" (at 129.54 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 129.54 59.69 0)
@@ -2791,9 +2770,6 @@
     (pin "1" (uuid 47e04596-0277-43da-b8a7-1fa7c06c32d4))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
           (reference "#PWR0112") (unit 1)
         )
@@ -2834,7 +2810,7 @@
   (symbol (lib_id "power:+3V3") (at 128.27 26.67 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fc14677)
-    (property "Reference" "#PWR?" (at 128.27 30.48 0)
+    (property "Reference" "#PWR0103" (at 128.27 30.48 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 128.27 22.86 0)
@@ -2849,9 +2825,6 @@
     (pin "1" (uuid 86674048-74c3-4287-b41a-41ebe8c6a09c))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
           (reference "#PWR0103") (unit 1)
         )
@@ -3108,7 +3081,7 @@
   (symbol (lib_id "power:+3V3") (at 153.67 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fcbcf6e)
-    (property "Reference" "#PWR?" (at 153.67 101.6 0)
+    (property "Reference" "#PWR0116" (at 153.67 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 153.67 93.98 0)
@@ -3123,9 +3096,6 @@
     (pin "1" (uuid d70dcc59-4358-4852-b0cb-51bec6c66de8))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
           (reference "#PWR0116") (unit 1)
         )
@@ -3136,7 +3106,7 @@
   (symbol (lib_id "power:+3V3") (at 153.67 118.11 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-00005fcbd507)
-    (property "Reference" "#PWR?" (at 153.67 114.3 0)
+    (property "Reference" "#PWR0118" (at 153.67 114.3 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3V3" (at 153.67 121.92 0)
@@ -3151,9 +3121,6 @@
     (pin "1" (uuid cd84581d-5fbb-4d8f-b72e-7e448ccdc281))
     (instances
       (project "Panel"
-        (path "/694764e4-f65d-4802-b71d-9e351a7ec672/00000000-0000-0000-0000-00005fb26e9d"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/694764e4-f65d-4802-b71d-9e351a7ec672"
           (reference "#PWR0118") (unit 1)
         )
