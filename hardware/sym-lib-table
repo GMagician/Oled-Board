@@ -1,3 +1,4 @@
 (sym_lib_table
-  (lib (name Panel)(type Legacy)(uri ${KIPRJMOD}/library/Panel.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "Panel")(type "KiCad")(uri "${KIPRJMOD}/library/Panel.kicad_sym")(options "")(descr ""))
 )
