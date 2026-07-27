@@ -1,3 +1,5 @@
+>[!WARNING]
+>The transfer of all repositories to my [Codeberg account](https://codeberg.org/GMagician) is currently ongoing. In the future, this project will be continued here!
 # SDD1306 1.3" OLED Board
 
 This board has been inspired by Leonerd it's an open source and open hardware.
